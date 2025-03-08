@@ -1,0 +1,40 @@
+name: bug report
+description: バグの報告
+title: "BUG_REPORT: "
+labels: ["バグ"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグの報告ありがとうございます。
+  - type: input
+    id: page
+    attributes:
+      label: ページ
+      description: >
+        どのページでバグが発生しているか (名前 or URL)
+      placeholder: 例) ルーレット
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: 出力
+      description: >
+        エラー表示やコンソールの中身など
+      placeholder: >
+        Uncaught ReferenceError: a is not defined
+          at <anonymous>:1:1
+        (anonymous)	@	VM38:1
+  - type: textarea
+    id: description
+    attributes:
+      label: 説明
+      description: >
+        エラーが起こった詳細
+      placeholder: >
+        何をしましたか?(入力したものなど)
+        どんな状態になりましたか?
+    validations:
+      required: true

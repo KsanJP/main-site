@@ -1,0 +1,38 @@
+name: new features
+description: 新機能の要望
+title: "NEW_FEATURES: "
+labels: ["強化"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        要望ありがとうございます。
+  - type: input
+    id: page
+    attributes:
+      label: ページ
+      description: >
+        どのページに機能を追加するか (名前 or URL)
+      placeholder: 例) ルーレット
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 説明
+      description: >
+        機能の説明
+      placeholder: >
+        どんな機能が欲しいですか?
+        どこに追加してほしいですか?
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: コード
+      description: >
+        使えるコードやライブラリなど (わかる人向け)
+      placeholder: >
+        例) npmのexpressというライブラリが使えます
